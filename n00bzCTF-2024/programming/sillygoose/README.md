@@ -1,7 +1,7 @@
 ## SillyGoose🦆
 There's no way you can guess my favorite number, you silly goose.
 
-<center><img src="sillygoose.jpg" width="100" height="100"></center>
+<center><img src="sillygoose.jpg" width="500" height="500"></center>
 
 #### ➡Step-1:
 We are given `sillygoose.py` which is as follows:
