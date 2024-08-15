@@ -5,6 +5,7 @@ This is an introductory steganography challenge. Here is some guidance to help y
 2. One of the bits has been corrupted in the R, G, and B bit representations.
 3. Extract the corrupted bits stored in the R, G, and B bit representations.
 
+---
 
 #### ➡Step-1:
 The tool is ***Steg Online*** based on the file name.
