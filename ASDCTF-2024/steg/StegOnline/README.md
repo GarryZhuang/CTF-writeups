@@ -12,7 +12,7 @@ The tool is ***Steg Online*** based on the file name.
 #### ➡Step-2:
 Analysis of the color plane indicates there is an issue with R0, G0, B0. Maybe there is hidden data?
 
-<center><img src="colorplane.jpg"></center>
+<center><img src="colorplane.png"></center>
 
 #### ➡Step-3:
 Created the proof of concept on my client-side to prevent the server from receving unnecessary traffic 
