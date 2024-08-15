@@ -44,20 +44,60 @@ while True:
 #### Step-2:
 Analyzing the code, we notice that the program generates a random number that is a google. We also see that we get to know if our guess is too high or too low.
 We decide to use the Binary Search method to see if we can guess the random number in under 500 guesses.
-Mathematical Proof:
-`m = floor(2 / (low + high))`
+**Mathematical Proof:**
 $n \geq \log_{2}(10^{100}) = 100 \cdot \log_{2}(10) \approx 100 \cdot 3.321928 \approx 332.193$.
 
 #### Step-3:
-After executing the above script, we get a new image called `new_image.png` which is as follows:
+We use this script to utilize Binary Search method to obtain the number
 
-<img src="new_image.png">
+```py
+# ============================================
+# Proof Of Concept
+# By Garry Zhuang 2024
+# ============================================
+# This shows that the CTF task (SillyGoose) can be completed in less than 400 tries
+#
+# This uses the binary search method,
+# calculated to take a maximum 333 tries/attempts.
+#
+# To run:
+# ./program.py
+
+from random import randint
+import time
+
+ans = randint(0, pow(10, 100))  # Generate the random number
+start_time = int(time.time())  # Log the start time
+
+while True:
+
+    # We have 60 seconds to complete this task.
+    if int(time.time()) > start_time + 60: 
+       print("you ran out of time you silly goose") 
+       break
+
+    low = 0
+    high = pow(10, 100)
+    guess_count = 0
+    
+    while low <= high:
+        # Calculate the middle point
+        mid = (low + high) // 2
+        guess_count += 1
+        
+        if mid < ans:
+            print(f"[Guess {guess_count}] {mid} is too low.")
+            
+            low = mid + 1
+        elif mid > ans:
+            print(f"[Guess {guess_count}] {mid} is too high.")
+            high = mid - 1
+        else:
+            print(f"Congrats! The number is {mid}. Found in {guess_count} guesses.")
+            break
+    break
+```
 
 #### Step-4:
-The image is then scanned using an online tool called [Aspose](https://products.aspose.app/barcode/recognize) which decodes the QR code and gives out the flag.
-
-<img src="Flag.png">
-
-#### Step-5:
-Finally the flag becomes:
-`CTFlearn{how_can_swapping_columns_hide_a_qr_code}`
+The server outputs the flag:
+`n00bz{y0u_4r3_4_sm4rt_51l1y_g0053}`
