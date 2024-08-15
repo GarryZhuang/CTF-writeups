@@ -1,7 +1,7 @@
-## SillyGoose
-There's no way you can guess my favorite number, you silly goose. Author: Connor Chang
+## SillyGoose🦆
+There's no way you can guess my favorite number, you silly goose.
 
-#### Step-1:
+#### ➡Step-1:
 We are given `sillygoose.py` which is as follows:
 
 ```py
@@ -41,13 +41,13 @@ while True:
         print("you have a skill issue you silly goose")
 ```
 
-#### Step-2:
+#### ➡Step-2:
 Analyzing the code, we notice that the program generates a random number that is a google. We also see that we get to know if our guess is too high or too low.
 We decide to use the Binary Search method to see if we can guess the random number in under 500 guesses.
 **Mathematical Proof:**
 $n \geq \log_{2}(10^{100}) = 100 \cdot \log_{2}(10) \approx 100 \cdot 3.321928 \approx 332.193$.
 
-#### Step-3:
+#### ➡Step-3:
 We use this script to utilize Binary Search method to obtain the number
 
 ```py
@@ -98,6 +98,6 @@ while True:
     break
 ```
 
-#### Step-4:
+#### 👑Step-4:
 The server outputs the flag:
 `n00bz{y0u_4r3_4_sm4rt_51l1y_g0053}`
