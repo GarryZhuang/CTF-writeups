@@ -1,6 +1,8 @@
 ## SillyGoose🦆
 There's no way you can guess my favorite number, you silly goose.
 
+<img src="sillygoose.jpg">
+
 #### ➡Step-1:
 We are given `sillygoose.py` which is as follows:
 
