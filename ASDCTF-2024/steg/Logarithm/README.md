@@ -4,7 +4,7 @@ There is a flag hidden in this image using simple steganography techniques. Anal
 ---
 
 #### ➡Step-1:
-We will first check the PNG File Header ```89 50 4E 47 0D 0A 1A 0A``` and PNG File Footer ```49 45 4E 44 AE 42 60 82```
+We will first check the PNG File Header ```89 50 4E 47 0D 0A 1A 0A``` and PNG File Footer ```49 45 4E 44 AE 42 60 82``` using HxD (a hex editor)
 
 ---
 
